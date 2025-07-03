@@ -2,7 +2,7 @@
 cask "lunchtui" do
   desc "A beautiful command-line interface for your Lunch Money account"
   homepage "https://github.com/Rshep3087/lunchtui"
-  version "0.18.0"
+  version "0.19.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "lunchtui" do
 
   on_macos do
     on_intel do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.18.0/lunchtui_Darwin_x86_64.tar.gz"
-      sha256 "ae68e4378980f4e9c0f477ca9a85a0db7c2c31c94fa56217843d66d4a8bd4343"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.19.0/lunchtui_Darwin_x86_64.tar.gz"
+      sha256 "ef24903b6b0f8ffcc6fda14aaabc544bd2ccef98952d7aaf88cd3ff046bc4b16"
     end
     on_arm do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.18.0/lunchtui_Darwin_arm64.tar.gz"
-      sha256 "3f407cca81dd1f0a47219823e997dfb1056e29cb8a69b12b3574cd5abc19ba9c"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.19.0/lunchtui_Darwin_arm64.tar.gz"
+      sha256 "7939b11be87f39d32e8947d6ded61168e188ddab43e75c7ac8f748d9f714b15a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.18.0/lunchtui_Linux_x86_64.tar.gz"
-      sha256 "7b7ddb8c468f7bce8e371e0731af519866e6b0f4b3ed5a7c28290a7cf1a2fd5b"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.19.0/lunchtui_Linux_x86_64.tar.gz"
+      sha256 "beb8d742481a28fa34bc6381aec7293d84252d2141f800f91a4dd5b460b53478"
     end
     on_arm do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.18.0/lunchtui_Linux_arm64.tar.gz"
-      sha256 "b3733e5f3364564d002e869e95be943af26608f6a2cdd85533342fd7cfd5be85"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.19.0/lunchtui_Linux_arm64.tar.gz"
+      sha256 "d79d12b529b88350946d52b1e73918927b3e3ff708cc9d39e6d4f5b4ad218061"
     end
   end
 
