@@ -2,7 +2,7 @@
 cask "lunchtui" do
   desc "A beautiful command-line interface for your Lunch Money account"
   homepage "https://github.com/Rshep3087/lunchtui"
-  version "0.20.1"
+  version "0.21.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,24 +12,28 @@ cask "lunchtui" do
 
   on_macos do
     on_intel do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.20.1/lunchtui_Darwin_x86_64.tar.gz"
-      sha256 "787600171ae7633134c6e2e4e772edae188d43078cab2c486d5d08222ee8bbb6"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.21.0/lunchtui_Darwin_x86_64.tar.gz"
+      sha256 "f9a857e214b3478f6fd78a39d318f7efcd75e92d7cc3887d812e0a960b983866"
     end
     on_arm do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.20.1/lunchtui_Darwin_arm64.tar.gz"
-      sha256 "deadebb4a7a00bddfceb2e411559114988695f8fb6d5704432a9fc27a104b67c"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.21.0/lunchtui_Darwin_arm64.tar.gz"
+      sha256 "854a392a1dee92618da736931874f5ee29f253cf2c0ec66bf626e6a702dd28fe"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.20.1/lunchtui_Linux_x86_64.tar.gz"
-      sha256 "d1edfed47f1c3fe4b02fc385f7abb36bf4d2661e19148c2d7f986c4be20b44e8"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.21.0/lunchtui_Linux_x86_64.tar.gz"
+      sha256 "a86e8b4b9cd0d92e602bab9f7652a92717f8b788c3d4d271f8074f994a081027"
     end
     on_arm do
-      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.20.1/lunchtui_Linux_arm64.tar.gz"
-      sha256 "d0dc44197e6247fca96d750d2c3e798cd8646025cab74383d4478603851a3454"
+      url "https://github.com/Rshep3087/lunchtui/releases/download/v0.21.0/lunchtui_Linux_arm64.tar.gz"
+      sha256 "5f04404c9a6f37df98229cdef7c1c6270b241ed62b8c756d2d75919bf506b155"
     end
+  end
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/lunchtui"]
   end
 
   # No zap stanza required
